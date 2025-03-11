@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 0;
+        }
+        .container{
+            width: 40%;
+            margin: 50px auto;
+            background: white;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0px 0px 10px rgba(0, 0,0, 0.1);
+        }
+        h2{
+            text-align:right 35%;
+            color: #333;
+        }
+        lable{
+            font-weight: bold;
+            display: block;
+            margin: 10px 0 5 px;
+        }
+        input[type="text"],
+        input[type="email"],
+        extarea  {
+            width: 34%;
+            padding: 10px;
+            margin-bottom: 15px;
+            border:1px solid #ccc;
+            border-radius: 5px;
+            font-size: 16px;
+        }
+        button{
+            width: 36%;
+            padding: 10px;
+            background-color:#28a745;
+            border: none;
+            color: white;
+            font-size: 16px;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        button:hover{
+            background-color: #218838;
+        }
+
+    </style>
+</head>
+<body>
+    <h2>Liên hệ với chúng tôi</h2>
+    <form action="/action_page.php">
+        <lable for="fname">Họ và tên:</lable><br>
+        <input type="text" id="fname" name="fname"><br>
+        <br>
+        <lable for="email">Email:</lable><br>
+        <input type="email" id="email" name="email"/><br>
+        <br>
+        <lable for="message">Tin nhắn:</lable><br>
+        <textarea id="message" name="message" rows="5" cols="60" placeholder=""></textarea><br>
+        <br>
+        <button type ="submit">Gửi</button>
+    </form>
+</body>
+</html>
